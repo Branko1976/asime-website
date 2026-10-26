@@ -1,5 +1,7 @@
-Add two photos here, named exactly:
+Add photos here, named exactly:
   branko.jpg
   itzel.jpg
-Portrait (taller than wide) works best, around 600x750 px.
-Until they are added, the site shows initials instead.
+  yuko.jpg
+branko/itzel: portrait (taller than wide), around 600x750 px.
+yuko: square works best (shown as a circle), around 400x400 px.
+Until a photo is added, the site shows initials instead.
