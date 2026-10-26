@@ -1,0 +1,5 @@
+Add two photos here, named exactly:
+  branko.jpg
+  itzel.jpg
+Portrait (taller than wide) works best, around 600x750 px.
+Until they are added, the site shows initials instead.
