@@ -161,6 +161,19 @@ section{padding:clamp(80px,10vw,128px) 0;position:relative}
 .perk h3{color:#fff;margin-bottom:10px}
 .perk p{color:#FFEFF4;margin:0}
 .perk a{display:inline-block;margin-top:16px;color:#fff;font-weight:700}
+.tiers-h{color:#fff;font-size:clamp(1.3rem,2vw,1.6rem);margin:44px 0 16px;scroll-margin-top:110px}
+.tiers{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:720px){.tiers{grid-template-columns:1fr}}
+.tier{border-radius:var(--r-md);padding:26px;display:flex;flex-direction:column;align-items:flex-start;color:var(--ink)}
+.tier-regular{background:#fff}
+.tier-disc{background:var(--yellow)}
+.tier .tname{font-family:var(--display);font-weight:700;font-size:1.1rem}
+.tier .price{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,4.5vw,3.2rem);line-height:1;letter-spacing:-.03em;margin:10px 0 12px}
+.tier p{color:#3A3558;margin:0 0 22px;flex:1}
+.tier-disc p{color:#3D2E00}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{color:#fff;box-shadow:0 12px 28px -12px rgba(18,14,46,.8)}
+.tiers-note{color:#FFE9F1;font-size:.95rem;margin:18px 0 0}
 .panel .foot{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:36px}
 .panel .foot small{color:#FFE9F1;font-size:.95rem}
 
