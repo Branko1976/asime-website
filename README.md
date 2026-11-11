@@ -17,6 +17,8 @@ styles.css         design and colours, shared by both pages
 logo.svg           ASIME logo (header and certificate)
 favicon.svg        browser-tab icon
 img/               board photos: branko.jpg, itzel.jpg, yuko.jpg
+materials/         free teaching materials (PDFs) for download
+materials/covers/  cover thumbnails shown next to each PDF
 CNAME              created by GitHub, connects the site to asime.online (do not delete)
 README.md          this file
 ```
@@ -29,13 +31,14 @@ Both pages have the same sections, in this order:
 
 | Section | Content |
 |---|---|
-| **Header** | Logo, menu (Membership, Microcredentials, Conferences, Services, Journal), 日本語 / English switch, Join button |
+| **Header** | Logo, menu (Membership, Microcredentials, Conferences, Services, Materials, Journal), 日本語 / English switch, Join button |
 | **Hero** | Society name, short mission, tiles linking to IME, Microcredentials, Conferences and member savings |
 | **About** | Mission statement and four focus areas: curriculum internationalization, joint teaching modules, professional development, research and publication |
 | **Membership** | Four member benefits and the two membership types (below) |
 | **Microcredentials** | Short certified courses, course languages, focus areas, how it works, "Register interest" email button |
 | **Conferences** | What to expect, member rate note, "Ask about upcoming events" email button |
 | **Services** | Course languages; custom-tailored workshops; student experience tours (in Japan and abroad), each with an email button |
+| **Free teaching materials** | Downloadable PDFs with cover, description and Download button (currently: Scientific Writing companion textbook, English and Japanese editions) |
 | **Journal** | International Medical Education (IME), the society journal: ISSN 2813-141X, open access, Scopus, first Impact Factor, aims and scope |
 | **Board** | Branko Aleksic and Itzel Bustos Villalobos (Co-Presidents), Yuko Aleksic (Treasurer), each with photo and short CV |
 | **Contact** | Postal address and a "Send an email" button |
@@ -79,6 +82,20 @@ Open the files in any text editor (TextEdit in plain-text mode, or a free editor
 - **Email address**: search for `branko@med.nagoya-u.ac.jp` in both pages.
 - **Colours**: the main colours are at the top of `styles.css`.
 - **Photos**: put portrait photos (about 600 × 750 px) in `img/`, named exactly `branko.jpg`, `itzel.jpg`, `yuko.jpg`. Until a photo is there, the site shows initials.
+
+### Adding a new teaching material
+
+1. Put the PDF in `materials/`. Use a short name with no spaces, e.g. `pbl-guide-en.pdf`.
+2. Make a cover image: open the PDF in Preview, select the first page, **File → Export**, format **JPEG**, save it in `materials/covers/` (e.g. `pbl-guide-en.jpg`). About 400 px wide is enough.
+3. Open `index.html`, find the line `<!-- MATERIAL: copy this whole <article> block to add a new item -->`, and copy everything from that line down to the next `</article>`. Paste the copy just below.
+4. In the copy, change:
+   - both `materials/...pdf` links to your new PDF name
+   - the `materials/covers/...jpg` image to your new cover name
+   - the language tag, title, subtitle, description, author and page count / size line
+5. Do the same in `ja/index.html`, with the text in Japanese. In the Japanese page all paths start with `../` (e.g. `../materials/pbl-guide-en.pdf`); keep that.
+6. Commit and push as usual (below).
+
+Or just send the PDF to Claude and ask to add it.
 
 ---
 
