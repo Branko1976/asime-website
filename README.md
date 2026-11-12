@@ -145,3 +145,11 @@ On github.com: repository **Settings → Pages** → Custom domain `www.asime.on
 - **Push rejected**: click **Fetch origin** → **Pull origin**, then **Push origin** again.
 - **"DNS check unsuccessful" on GitHub**: check the records above and that DNSSEC is off. Test at https://dns.google/resolve?name=asime.online&type=A — `"Status": 0` with the four 185.199… addresses means DNS is fine.
 - **404 page**: make sure `index.html` is at the top level of the repository and the `CNAME` file is still there.
+
+---
+
+## Analytics
+
+Visitor statistics use **Cloudflare Web Analytics** (free, no cookies).
+The tracking line is at the bottom of both `index.html` and `ja/index.html`, just before `</body>` — keep it when editing.
+View the stats at dash.cloudflare.com → **Analytics & Logs → Web Analytics → www.asime.online**.
