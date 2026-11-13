@@ -31,7 +31,7 @@ Both pages have the same sections, in this order:
 
 | Section | Content |
 |---|---|
-| **Header** | Logo, menu (Membership, Microcredentials, Conferences, Services, Materials, Journal), 日本語 / English switch, Join button |
+| **Header** | Logo, menu (Membership, Microcredentials, Conferences, Services, Materials, Journal, Governance), 日本語 / English switch, Join button. On smaller screens and phones the links move into a ☰ menu button |
 | **Hero** | Society name, short mission, tiles linking to IME, Microcredentials, Conferences and member savings |
 | **About** | Mission statement and four focus areas: curriculum internationalization, joint teaching modules, professional development, research and publication |
 | **Membership** | Four member benefits and the two membership types (below) |

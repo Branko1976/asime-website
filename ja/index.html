@@ -32,7 +32,22 @@
         <a class="sec" href="#services">サービス</a>
         <a class="sec" href="#materials">教材</a>
         <a class="sec" href="#journal">学術誌</a>
+        <a class="sec" href="#board">役員</a>
         <a class="lang" href="../" hreflang="en" lang="en">English</a>
+        <details class="more">
+          <summary aria-label="メニュー"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+          <div class="menu-panel">
+            <a href="#about">学会について</a>
+            <a href="#membership">会員特典</a>
+            <a href="#microcredentials">マイクロクレデンシャル</a>
+            <a href="#conferences">学術集会</a>
+            <a href="#services">サービス</a>
+            <a href="#materials">教材</a>
+            <a href="#journal">学術誌</a>
+            <a href="#board">役員</a>
+            <a href="#contact">お問い合わせ</a>
+          </div>
+        </details>
         <a class="join" href="#join">入会</a>
       </nav>
     </div>
@@ -287,7 +302,7 @@
     <span>学会誌： <a href="https://www.mdpi.com/journal/ime" target="_blank" rel="noopener">International Medical Education</a></span>
   </div>
 </footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();document.querySelectorAll('.more a').forEach(a=>a.addEventListener('click',()=>a.closest('details').removeAttribute('open')));document.addEventListener('click',e=>{const m=document.querySelector('.more[open]');if(m&&!m.contains(e.target))m.removeAttribute('open')});</script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2711b03047334b0db391e8ab12afb39d"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

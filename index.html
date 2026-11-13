@@ -32,7 +32,22 @@
         <a class="sec" href="#services">Services</a>
         <a class="sec" href="#materials">Materials</a>
         <a class="sec" href="#journal">Journal</a>
+        <a class="sec" href="#board">Governance</a>
         <a class="lang" href="ja/" hreflang="ja" lang="ja">日本語</a>
+        <details class="more">
+          <summary aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+          <div class="menu-panel">
+            <a href="#about">About</a>
+            <a href="#membership">Membership</a>
+            <a href="#microcredentials">Microcredentials</a>
+            <a href="#conferences">Conferences</a>
+            <a href="#services">Services</a>
+            <a href="#materials">Materials</a>
+            <a href="#journal">Journal</a>
+            <a href="#board">Governance</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </details>
         <a class="join" href="#join">Join</a>
       </nav>
     </div>
@@ -287,7 +302,7 @@
     <span>Society journal: <a href="https://www.mdpi.com/journal/ime" target="_blank" rel="noopener">International Medical Education</a></span>
   </div>
 </footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();document.querySelectorAll('.more a').forEach(a=>a.addEventListener('click',()=>a.closest('details').removeAttribute('open')));document.addEventListener('click',e=>{const m=document.querySelector('.more[open]');if(m&&!m.contains(e.target))m.removeAttribute('open')});</script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2711b03047334b0db391e8ab12afb39d"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
